@@ -1,0 +1,8 @@
+Ablation_Dimension,Configuration,Mean_IoU (%),Mean_Dice (%),Recall (%),Finding
+Loss Function,BCE + Dice Loss,68.50%,76.40%,82.30%,Higher False Negatives (missed panels) on complex scenes
+Loss Function,"Focal Tversky Loss (alpha=0.3, beta=0.7)",74.20%,81.65%,88.40%,Strong penalty on False Negatives improves boundary recall by +6.10%
+SR Preprocessing,None (Native ~80cm LR),66.28%,73.48%,78.10%,Baseline low-resolution segmentation
+SR Preprocessing,Bicubic Interpolation (~80cm -> ~30cm),67.60%,74.68%,79.35%,Spatial smoothing aids MLP decoder (+1.32% IoU gain)
+SR Preprocessing,SwinIR Super-Resolution (x2.67),65.86%,72.95%,77.80%,Fast-converged neural reconstruction introduces subtle edge noise (-0.42% IoU)
+Augmentation,No Augmentation (Flips/Rotations disabled),69.10%,77.20%,81.50%,Severe overfitting to specific solar array orientations
+Augmentation,Full Geometric Augmentation (Flips + 90-deg Rotations),74.20%,81.65%,88.40%,Geometric invariance boosts test generalization by +5.10% IoU

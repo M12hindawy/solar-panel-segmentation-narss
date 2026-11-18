@@ -1,0 +1,5 @@
+Dataset_Name,Nominal_GSD,Type,Sensor,Image_Count,Mask_Count,Dimensions,Status
+PV03 Aerial Benchmark,0.30m,REAL_AERIAL_ORTHOPHOTO,Aerial Flight RGB Camera,2308,2308,1024x1024,VERIFIED
+PV08 Satellite Benchmark,0.80m,REAL_SATELLITE_IMAGERY,Gaofen-2 / Beijing-2,Independent Scenes,N/A,Multi-scale,VERIFIED
+Synthetic 80cm Degradation,0.80m-equiv,CONTROLLED_SYNTHETIC_DEGRADATION,Bicubic scale x2.67,2308,2308,384x384 / 96x96,VERIFIED
+Synthetic 1m Degradation,1.00m-equiv,CONTROLLED_SYNTHETIC_DEGRADATION,Bicubic scale x3.33,2308,2308,307x307 / 76x76,VERIFIED

@@ -1,0 +1,9 @@
+rank,filename,category,iou,dice,tp_pixels,fp_pixels,fn_pixels,visual_path
+1,PV03_340148_1186178.bmp,PV03_Ground_Cropland,0.0,0.0,0,3248,11904,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank01_PV03_Ground_Cropland_PV03_340148_1186178.png
+2,PV03_340120_1186179.bmp,PV03_Ground_Cropland,0.0,0.0,0,7818,2923,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank02_PV03_Ground_Cropland_PV03_340120_1186179.png
+3,PV03_340092_1186146.bmp,PV03_Ground_Cropland,0.0,0.0,0,7289,971,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank03_PV03_Ground_Cropland_PV03_340092_1186146.png
+4,PV03_340148_1186145.bmp,PV03_Ground_Cropland,0.0,0.0,0,0,6934,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank04_PV03_Ground_Cropland_PV03_340148_1186145.png
+5,PV03_341444_1188289.bmp,PV03_Rooftop,0.0,0.0,0,6342,297,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank05_PV03_Rooftop_PV03_341444_1188289.png
+6,PV03_340675_1186269.bmp,PV03_Ground_Grassland,0.0,0.0,0,0,3928,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank06_PV03_Ground_Grassland_PV03_340675_1186269.png
+7,PV03_335576_1188600.bmp,PV03_Ground_Cropland,0.0,0.0,0,2740,720,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank07_PV03_Ground_Cropland_PV03_335576_1188600.png
+8,PV03_340647_1186203.bmp,PV03_Ground_Grassland,0.0,0.0,0,12,1291,h:\photovoltaic\FINAL\figures\failure_cases_visuals\rank08_PV03_Ground_Grassland_PV03_340647_1186203.png

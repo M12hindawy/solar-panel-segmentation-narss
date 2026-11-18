@@ -1,0 +1,11 @@
+{
+  "img_size": 256,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "focal_tversky_alpha": 0.3,
+  "focal_tversky_beta": 0.7,
+  "focal_tversky_gamma": 1.333,
+  "sr_scale_80cm": 2.67,
+  "sr_scale_1m": 3.33
+}

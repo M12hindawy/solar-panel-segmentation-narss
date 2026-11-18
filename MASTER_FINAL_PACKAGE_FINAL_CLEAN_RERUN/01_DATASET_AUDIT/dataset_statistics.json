@@ -1,0 +1,59 @@
+{
+  "audit_timestamp": "2026-08-24T17:50:00Z",
+  "dataset_name": "PV03 & PV08 Multi-Resolution Photovoltaic Dataset",
+  "total_real_aerial_images_pv03": 2308,
+  "pv03_nominal_gsd_m": 0.3,
+  "pv08_nominal_gsd_m": 0.8,
+  "1m_dataset_classification": "SYNTHETIC_ONLY (Controlled downsampling factor 3.33x)",
+  "categories": {
+    "PV03_Ground_Cropland": {
+      "total_images": 859,
+      "total_labels": 859,
+      "matched_pairs": 859,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    },
+    "PV03_Ground_Grassland": {
+      "total_images": 117,
+      "total_labels": 117,
+      "matched_pairs": 117,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    },
+    "PV03_Ground_SalineAlkali": {
+      "total_images": 352,
+      "total_labels": 352,
+      "matched_pairs": 352,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    },
+    "PV03_Ground_Shrubwood": {
+      "total_images": 119,
+      "total_labels": 119,
+      "matched_pairs": 119,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    },
+    "PV03_Ground_WaterSurface": {
+      "total_images": 625,
+      "total_labels": 625,
+      "matched_pairs": 625,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    },
+    "PV03_Rooftop": {
+      "total_images": 236,
+      "total_labels": 236,
+      "matched_pairs": 236,
+      "nominal_gsd_m": 0.3,
+      "platform": "Aerial Flight Orthophoto",
+      "sensor_type": "RGB Sensor"
+    }
+  },
+  "spatial_independence_audit": "PV03 and PV08 cover independent non-aligned geographic areas (Verified)"
+}

@@ -1,0 +1,3 @@
+Model,Mean_IoU (%),Mean_Dice (%),Mean_Precision (%),Mean_Recall (%),Mean_Pixel_Accuracy (%)
+SegFormer-B4 (Focal Tversky),70.12%,77.08%,79.73%,84.09%,93.52%
+U-Net Baseline (BCE+Dice),68.50%,76.40%,79.10%,82.30%,90.50%

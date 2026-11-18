@@ -1,0 +1,13 @@
+Requirement,Original_Source,Implementation,Execution_Status,Evidence_File,Recomputed,Verified,Missing,Action_Required
+REQ-01: Dataset Audit,Master Execution Spec,01_DATASET_AUDIT,PASS,01_DATASET_AUDIT/dataset_report.csv,YES,YES,NO,None
+REQ-02: Spatial Split,Master Execution Spec,02_SPLITS,PASS,02_SPLITS/train_split.csv,YES,YES,NO,None
+REQ-03: SegFormer-B4,Master Execution Spec,03_SEGMENTATION,PASS,03_SEGMENTATION/metrics/per_category_metrics.csv,YES,YES,NO,None
+REQ-04: Visual Manifest,Master Execution Spec,03_SEGMENTATION/visual_manifest.csv,PASS,03_SEGMENTATION/visual_manifest.csv,YES,YES,NO,None
+REQ-05: Super-Resolution,Master Execution Spec,04_SUPER_RESOLUTION,PASS,04_SUPER_RESOLUTION/metrics/psnr_ssim_comparison.csv,YES,YES,NO,None
+"REQ-06: Full Matrix (A1-A4, B1-B3)",Master Execution Spec,05_TASK_EVALUATION,PASS,05_TASK_EVALUATION/metrics/full_experiment_matrix.csv,YES,YES,NO,None
+REQ-07: Wilcoxon Statistics,Master Execution Spec,06_STATISTICAL_TESTS,PASS,06_STATISTICAL_TESTS/pairwise_statistical_validation.csv,YES,YES,NO,None
+REQ-08: GIS / GeoJSON,Master Execution Spec,07_GEOJSON,PASS,07_GEOJSON/solar_panels_local.geojson,YES,YES,NO,Document Local CRS Limitation
+REQ-09: Failure Analysis,Master Execution Spec,08_FAILURE_ANALYSIS,PASS,08_FAILURE_ANALYSIS/failure_cases_summary.csv,YES,YES,NO,None
+REQ-10: End-to-End Inference,Master Execution Spec,10_INFERENCE,PASS,10_INFERENCE/real_examples/PV03,YES,YES,NO,None
+REQ-11: Reproducibility Spec,Master Execution Spec,11_REPRODUCIBILITY,PASS,11_REPRODUCIBILITY/requirements.txt,YES,YES,NO,None
+REQ-12: SHA-256 Manifest,Master Execution Spec,MANIFEST.csv,PASS,MANIFEST.csv,YES,YES,NO,None

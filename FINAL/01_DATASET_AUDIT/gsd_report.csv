@@ -1,0 +1,4 @@
+Dataset,Sensor,Nominal_GSD_m,Resolution_Class,Provenance,Type
+PV03 Aerial,Aerial Flight Camera,0.3,High Resolution (HR),Zenodo Benchmark Record 5171712,REAL_DATA
+PV08 Satellite,Gaofen-2 / Beijing-2,0.8,Low Resolution (LR),Civilian Satellite Telemetry,REAL_DATA
+1m Experiment,Controlled Physical Degradation,1.0,Very Low Resolution (VLR),Controlled Synthetic Scale x3.33,SYNTHETIC_ONLY

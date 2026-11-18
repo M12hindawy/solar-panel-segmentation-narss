@@ -1,0 +1,7 @@
+Module,File,Language,Status
+Dataset Audit & Validation,01_DATASET_AUDIT/dataset_report.csv,Python 3.14 / PyTorch 2.x,VERIFIED
+2D Spatial Grid Splitting,02_SPLITS/train_split.csv,Python / NumPy / Scikit-learn,VERIFIED
+SegFormer-B4 Architecture,03_SEGMENTATION/checkpoints/best_segformer_b4.pth,PyTorch (Custom GELU + MLP Decoder),VERIFIED
+U-Net Architecture,03_SEGMENTATION/checkpoints/best_unet.pth,PyTorch (DoubleConv + MaxPool/UpConv),VERIFIED
+SwinIR Custom Scale (x2.67 / x3.33),04_SUPER_RESOLUTION/checkpoints/swinir_80cm_x267_best.pth,PyTorch (Residual + PixelShuffle),VERIFIED
+End-to-End Inference Pipeline,10_INFERENCE/run_pipeline.py,Python / OpenCV / GeoJSON,VERIFIED

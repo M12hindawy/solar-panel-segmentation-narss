@@ -1,0 +1,4 @@
+Comparison,N,Mean_Diff_IoU,Wilcoxon_W,p_value,Statistically_Significant,Effect_Direction
+B2 (Bicubic) vs B1 (No-SR 80cm),382,+1.37%,21104.0,3.8690095868918926e-11,YES (p < 0.001),Bicubic improves segmentation (+1.37% IoU)
+B3 (SwinIR) vs B1 (No-SR 80cm),382,+1.00%,27043.0,0.0002294778769474343,YES (p < 0.01),SwinIR improvement (+1.00% IoU)
+B3 (SwinIR) vs B2 (Bicubic),382,-0.37%,27417.0,0.00045844519018588763,YES (p < 0.001),Bicubic superior to SwinIR (-0.37% IoU)

@@ -1,0 +1,5 @@
+Method,Scale,PSNR (dB),SSIM,LPIPS,Type
+Bicubic Interpolation,x2.67 (~80cm -> ~30cm),28.15 ± 2.84,0.7923 ± 0.083,NOT VERIFIED (Library absent),Geometric Baseline
+SwinIR (Ours),x2.67 (~80cm -> ~30cm),27.97 ± 2.66,0.7936 ± 0.089,NOT VERIFIED (Library absent),Neural Super-Resolution
+Bicubic Interpolation,x3.33 (~1.0m -> ~30cm),25.62 ± 2.45,0.7310 ± 0.091,NOT VERIFIED (Library absent),Geometric Baseline (Synthetic 1m)
+SwinIR (Ours),x3.33 (~1.0m -> ~30cm),25.48 ± 2.38,0.7328 ± 0.094,NOT VERIFIED (Library absent),Neural Super-Resolution (Synthetic 1m)

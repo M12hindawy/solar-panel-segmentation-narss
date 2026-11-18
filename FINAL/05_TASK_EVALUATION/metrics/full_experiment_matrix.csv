@@ -1,0 +1,8 @@
+Experiment_ID,Resolution_Scale,Pipeline_Condition,Mean_IoU,Mean_Dice,Delta_IoU,Type
+A1,Native ~0.30m,Native Aerial 30cm -> SegFormer-B4,70.12%,77.08%,Reference (Upper Bound),REAL_DATA
+A2,Synthetic ~1.00m (x3.33),Direct 1m LR -> SegFormer-B4 (No-SR),61.61%,71.12%,Baseline (1m),SYNTHETIC_DEGRADATION
+A3,Synthetic ~1.00m (x3.33),1m LR -> Bicubic x3.33 -> SegFormer-B4,62.70%,72.35%,+1.09%,GEOMETRIC_INTERPOLATION
+A4,Synthetic ~1.00m (x3.33),1m LR -> SwinIR x3.33 -> SegFormer-B4,61.45%,70.80%,-0.16%,NEURAL_SUPER_RESOLUTION
+B1,Synthetic ~0.80m (x2.67),Direct 80cm LR -> SegFormer-B4 (No-SR),66.23%,73.48%,Baseline (80cm),SYNTHETIC_DEGRADATION
+B2,Synthetic ~0.80m (x2.67),80cm LR -> Bicubic x2.67 -> SegFormer-B4,67.60%,74.68%,+1.37%,GEOMETRIC_INTERPOLATION
+B3,Synthetic ~0.80m (x2.67),80cm LR -> SwinIR x2.67 -> SegFormer-B4,67.23%,72.95%,1.00%,NEURAL_SUPER_RESOLUTION

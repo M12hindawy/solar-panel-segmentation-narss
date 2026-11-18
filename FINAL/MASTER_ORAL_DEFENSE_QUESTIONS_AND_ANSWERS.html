@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل أسئلة ومناقشة مشروع الذكاء الاصطناعي لرصد الألواح الشمسية</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; }
+  body { background-color: #0b1120; color: #f8fafc; padding: 30px 20px; line-height: 1.8; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #334155; padding-bottom: 25px; }
+  .header h1 { color: #38bdf8; font-size: 32px; font-weight: 900; margin-bottom: 10px; }
+  .header h2 { color: #94a3b8; font-size: 18px; }
+  .badge { background: #0284c7; color: white; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+  .section-title { color: #38bdf8; font-size: 24px; font-weight: 800; margin: 35px 0 20px 0; border-right: 6px solid #38bdf8; padding-right: 15px; }
+  .qa-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 22px 25px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+  .qa-card.trap { border-right: 6px solid #f59e0b; background: rgba(30, 41, 59, 0.95); }
+  .q-title { color: #38bdf8; font-size: 19px; font-weight: 800; margin-bottom: 10px; }
+  .qa-card.trap .q-title { color: #fbbf24; }
+  .a-body { color: #e2e8f0; font-size: 16px; }
+  .a-body ul { padding-right: 25px; margin-top: 8px; }
+  .a-body li { margin-bottom: 6px; }
+  .highlight { color: #10b981; font-weight: bold; }
+  .highlight-orange { color: #f59e0b; font-weight: bold; }
+  .quote-box { background: #0f172a; border-right: 4px solid #10b981; padding: 14px 18px; border-radius: 8px; margin-top: 12px; font-style: italic; color: #f8fafc; }
+  @media print { body { background: white; color: black; } .qa-card { background: #f8fafc; border: 1px solid #ccc; color: black; } .q-title { color: #0284c7; } .a-body { color: #333; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="badge">دليل المناقشة الشامل 🎓</span>
+    <h1>بنك الأسئلة النموذجية لمناقشة مشروع الذكاء الاصطناعي</h1>
+    <h2>Multi-Resolution Photovoltaic AI Pipeline: Defense Questions & Model Answers</h2>
+  </div>
+
+  <div class="section-title">🛰️ المحور الأول: بنك البيانات ودرجات الدقة (Data Provenance)</div>
+
+  <div class="qa-card">
+    <div class="q-title">س 1: من أين حصلت على البيانات؟ وما الفرق بين PV03 و PV08؟</div>
+    <div class="a-body">
+      • حصلنا على البيانات من بنك البيانات المعتمد المنشور على منصة الأبحاث الدولية <b>Zenodo</b>.<br>
+      • <b>PV03:</b> صور جوية حقيقية عالية الدقة (~0.30m) وتضم <b>2,308 صورة جوية</b> بأبعاد 1024×1024 بكسل عبر 6 تضاريس مختلفة.<br>
+      • <b>PV08:</b> صور أقمار صناعية حقيقية منفصلة (~0.80m) من أقمار Gaofen-2 تغطي مناطق جغرافية مختلفة تماماً.
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="q-title">س 2: هل بيانات 80cm و 1m المستخدمة في التجارب حقيقية أم لا؟ ولماذا؟</div>
+    <div class="a-body">
+      • <b>لا، هي بيانات تدهور اصطناعي محكوم (Controlled Synthetic Degradation)</b> تم توليدها رياضياً من نفس صور PV03 الجوية الأصلية.<br>
+      • <b>السبب العلمي:</b> صور الأقمار الصناعية (PV08) مصورة لمناطق أخرى؛ ولتدريب السوبر ريزوليوشن ومقارنة التقطيع، تشترط الرياضيات وجود أزواج متطابقة تماماً بالبكسل لنفس المزرعة الشمسية لعزل أثر تغير الدقة فقط دون تشويش موسمي أو جغرافي.
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="q-title">س 3: هل كان هناك بيانات 1m أصلية (Native 1m) على موقع Zenodo؟</div>
+    <div class="a-body">
+      • <b>لا إطلاقاً.</b> موقع Zenodo يوفر فقط PV03 (~0.30m) و PV08 (~0.80m).<br>
+      • مسار 1m تم توليده فيزيائياً في هذا البحث بتخفيض دقة الصور الجوية بمقدار <b>3.33×</b> لمحاكاة أقمار الرصد الأرضي بدقة 1 متر (مثل SPOT-6 و Gaofen-1).
+    </div>
+  </div>
+
+  <div class="section-title">🗺️ المحور الثاني: التقسيم الجغرافي ومنع التسريب (Data Leakage)</div>
+
+  <div class="qa-card">
+    <div class="q-title">س 4: كيف ضمنت بنسبة 100% عدم وجود تسريب مكاني للبيانات (0.00% Leakage)؟</div>
+    <div class="a-body">
+      • استخرجنا الإحداثيات المكانية لكل مشهد وطبقنا خوارزمية <b>العنقدة المكانية ثنائية الأبعاد (2D Spatial Grid Clustering)</b>.<br>
+      • تم عزل المشاهد بحيث تقع مجموعات التدريب (1,540 صورة) والتحقق (386 صورة) والاختبار (382 مشهداً) في بقع جغرافية منفصلة تماماً بنسبة تداخل <span class="highlight">0.00%</span>.
+    </div>
+  </div>
+
+  <div class="section-title">🔬 المحور الثالث: السوبر ريزوليوشن والسر العلمي لتفوق Bicubic</div>
+
+  <div class="qa-card" style="border-right: 6px solid #10b981;">
+    <div class="q-title">س 5 (السؤال الأهم): لماذا تفوق Bicubic على شبكة SwinIR في مهمة التقطيع؟</div>
+    <div class="a-body">
+      • <b>هلوسة الترددات العالية (High-Frequency Ringing Artifacts):</b> شبكة SwinIR تحاول زيادة حدة الحواف فتُدخل تشوهات وترددات مصطنعة تُربك رأس التفكيك في SegFormer.<br>
+      • <b>نعومة الاستيفاء الهندسي (Bicubic):</b> يحافظ على استمرارية التدرج اللوني الطبيعي، وهو ما يناسب مصفوفات الانتباه الذاتي، وبسرعة أعلى بـ 10 أضعاف!<br>
+      • <b>الأرقام:</b> Bicubic حقق <span class="highlight">67.60% IoU</span> متفوقاً على SwinIR (67.23% IoU) وعلى خط الأساس No-SR (66.23% IoU).
+    </div>
+  </div>
+
+  <div class="qa-card trap">
+    <div class="q-title">س 6 (سؤال فخ): "لو SwinIR اتدرب مع SegFormer كـ Joint Loss، هل النتيجة كانت هتتغير؟"</div>
+    <div class="a-body">
+      <div class="quote-box">
+        "نعم يا دكتور، في هذا البحث قيّمنا المسار المستقل (Decoupled Pipeline) وهو الأكثر شيوعاً في الصناعة؛ أما في التدريب المشترك (Joint Loss)، ستجبر شبكة التقطيع نموذج الـ SR على توليد ميزات تدعم الحواف الدلالية وليس مجرد المظهر البصري، وهو الامتداد المقترح في خاتمة بحثنا."
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-card trap">
+    <div class="q-title">س 7 (سؤال فخ): "لماذا لم تستخدم Diffusion Models أو GANs في السوبر ريزوليوشن؟"</div>
+    <div class="a-body">
+      <div class="quote-box">
+        "نماذج Diffusion و GANs معروفة بظاهرة الهلوسة التوليدية العالية واختراع تفاصيل بصرية لا وجود لها فيزيائياً؛ وإذا كان SwinIR قد أحدث تشوهات طفيفة في الحواف، فإن نماذج الانتشار كانت ستؤدي إلى خطأ هندسي ومساحي أكبر في أبعاد الألواح."
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">📊 المحور الرابع: التحقق الإحصائي القاطع (Wilcoxon Test)</div>
+
+  <div class="qa-card">
+    <div class="q-title">س 8: ما هي أرقام اختبار ويلكوكسون المؤكدة في بحثك؟ ولماذا Per-Image؟</div>
+    <div class="a-body">
+      • تم تطبيق الاختبار لكل صورة على حدة (Per-Image) للحفاظ على التباين الإحصائي لحجم العينة N=382 مشهداً.<br>
+      • <b>B2 (Bicubic) مقابل B1 (No-SR):</b> W = 21,104.0 | <span class="highlight">p = 3.87 × 10^-11 (دال إحصائياً جداً)</span><br>
+      • <b>B3 (SwinIR) مقابل B2 (Bicubic):</b> W = 27,417.0 | <span class="highlight">p = 4.58 × 10^-4 (تفوق Bicubic مثبت إحصائياً)</span>
+    </div>
+  </div>
+
+  <div class="section-title">🌍 المحور الخامس: حالات الإخفاق ومضلعات الـ GeoJSON</div>
+
+  <div class="qa-card">
+    <div class="q-title">س 9: ما هي أصعب تضاريس واجهها النموذج ولماذا؟</div>
+    <div class="a-body">
+      • <b>أسطح المباني الحضرية (Rooftop - 31.80% IoU)</b>، بسبب انعكاسات الزنك والألومنيوم (Specular Glint) وصغر مساحات الألواح المنزلية والتعقيد المعماري.<br>
+      • بينما حقق النموذج <span class="highlight">85.03%</span> في المسطحات المائية و <span class="highlight">83.55%</span> في الأراضي الزراعية.
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="q-title">س 10: كم مضلعاً استخرجتم وما هي المساحة الإجمالية المرصودة؟</div>
+    <div class="a-body">
+      • استخرجنا <b>1,254 مضلعاً هندسياً</b> لكامل مشاهد الاختبار بمساحة إجمالية قدرها <span class="highlight">10.64 كم²</span> (10,637,821.44 م²) بنظام إحداثيات مستوٍ محلي (Local Planar CRS) حفاظاً على النزاهة العلمية لعدم توفر ترويسات GPS في صور BMP الأصلية.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

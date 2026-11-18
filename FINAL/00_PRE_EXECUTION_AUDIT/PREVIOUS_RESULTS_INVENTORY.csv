@@ -1,0 +1,5 @@
+Artifact,Status,Action
+Previous SegFormer Metrics,RECOMPUTING_IN_CLEAN_RUN,Full re-evaluation on N=382 held-out test samples
+Previous Task-Oriented Results,RECOMPUTING_IN_CLEAN_RUN,Full re-evaluation across conditions A1-A4 and B1-B3
+Previous Statistical Tests,RECOMPUTING_IN_CLEAN_RUN,Re-run paired Wilcoxon Signed-Rank tests
+Previous Visual Panels,REGENERATING_IN_CLEAN_RUN,Re-render all visual panels with color overlay and manifests

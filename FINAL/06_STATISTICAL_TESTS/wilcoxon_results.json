@@ -1,0 +1,20 @@
+{
+  "sample_size_N": 382,
+  "comparisons": {
+    "Bicubic_vs_NoSR": {
+      "W": 21104.0,
+      "p_value": 3.8690095868918926e-11,
+      "significant": true
+    },
+    "SwinIR_vs_NoSR": {
+      "W": 27043.0,
+      "p_value": 0.0002294778769474343,
+      "significant": true
+    },
+    "SwinIR_vs_Bicubic": {
+      "W": 27417.0,
+      "p_value": 0.00045844519018588763,
+      "significant": true
+    }
+  }
+}

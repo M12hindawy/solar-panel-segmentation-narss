@@ -1,0 +1,4 @@
+Model_Name,File,Size_MB,Loss,Val_IoU,Status,Scale
+SegFormer-B4,checkpoints/best_segformer_b4.pth,9.87,"Focal Tversky (alpha=0.3, beta=0.7)",0.742,VERIFIED,
+U-Net Baseline,checkpoints/best_unet.pth,31.11,BCE + Dice Loss,0.685,VERIFIED,
+SwinIR Custom Scale,checkpoints/swinir_80cm_x267_best.pth,3.28,L1 + 0.1 MSE,,VERIFIED,x2.67 (~80cm -> ~30cm)

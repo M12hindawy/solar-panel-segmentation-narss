@@ -1,0 +1,21 @@
+# Large Datasets & Archives (>50MB)
+*.zip
+*.tar.gz
+*.7z
+PV03/
+PV03.zip
+MASTER_FINAL_PACKAGE_FINAL_CLEAN_RERUN_BACKUP.zip
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.tmp
+
+# Checkpoints large model weights
+*.pth
+*.pt
+*.onnx
+*.bin
+checkpoints/*.pth
+checkpoints/*.pt
